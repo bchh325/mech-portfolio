@@ -1,6 +1,6 @@
 import './App.css';
 import styles from './gridstyles.module.css'
-import { MdViewHeadline } from "react-icons/md"
+import { AiOutlineMenu } from "react-icons/ai"
 
 function App() {
   return (
@@ -17,13 +17,13 @@ function App() {
               <span>Spans</span>
             </div>
             <div className={styles.navbtn}>
-              <MdViewHeadline size={50}/>
+              <AiOutlineMenu size={50}/>
             </div>
           </div>
         </div>
       </div>
       <div className={styles.gridcontainer}>
-        <div className={styles.gridchild}>child</div>
+        <div>current</div>
         <div className={`${styles.gridchild} ${styles.childcontainer}`}>
           <div className={styles.content}>children</div>
           <div className={styles.content}>children</div>
