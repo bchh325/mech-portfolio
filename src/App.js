@@ -1,23 +1,43 @@
-import logo from './logo.svg';
 import './App.css';
+import styles from './gridstyles.module.css'
+import { MdViewHeadline } from "react-icons/md"
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={styles.nav}>
+        <div className={styles.navcomp}>
+          <div className={styles.flexcontainer}>
+            <div className={styles.innerflex}>
+              <span>Spans</span>
+              <span>Spans</span>
+              <span>Spans</span>
+              <span>Spans</span>
+              <span>Spans</span>
+              <span>Spans</span>
+            </div>
+            <div className={styles.navbtn}>
+              <MdViewHeadline size={50}/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={styles.gridcontainer}>
+        <div className={styles.gridchild}>child</div>
+        <div className={`${styles.gridchild} ${styles.childcontainer}`}>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+          <div className={styles.content}>children</div>
+        </div>
+      </div>
     </div>
   );
 }
