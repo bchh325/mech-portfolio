@@ -2,6 +2,14 @@ import './App.css';
 import styles from './gridstyles.module.css'
 import { AiOutlineMenu } from "react-icons/ai"
 
+
+/*
+
+All elements will eventually be put into their own components. 
+The current state of the App component is strictly for styling purposes.
+
+*/
+
 function App() {
   return (
     <div className="App">
@@ -23,11 +31,25 @@ function App() {
         </div>
       </div>
       <div className={styles.gridcontainer}>
-        <div>current</div>
+        <div>curr</div>
         <div className={`${styles.gridchild} ${styles.childcontainer}`}>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
+          <div className={`${styles.content} ${styles.information}`}>
+            <div className={styles.infochild}>grid child</div>
+            <div className={styles.infochild}>grid child</div>
+            <div className={styles.infochild}>grid child</div>
+            <div className={styles.infochild}>grid child</div>
+          </div>
+          <div className={styles.content}>project gallery</div>
+          <div className={styles.gallery}>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+            <div className={styles.gallerychild}>Gallery Child</div>
+          </div>
           <div className={styles.content}>children</div>
           <div className={styles.content}>children</div>
           <div className={styles.content}>children</div>
