@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/mech-portfolio/static/css/main.3cb6766e.css",
-    "main.js": "/mech-portfolio/static/js/main.beff7c41.js",
+    "main.css": "/mech-portfolio/static/css/main.871ef209.css",
+    "main.js": "/mech-portfolio/static/js/main.e0f4bc5b.js",
     "index.html": "/mech-portfolio/index.html",
-    "main.3cb6766e.css.map": "/mech-portfolio/static/css/main.3cb6766e.css.map",
-    "main.beff7c41.js.map": "/mech-portfolio/static/js/main.beff7c41.js.map"
+    "main.871ef209.css.map": "/mech-portfolio/static/css/main.871ef209.css.map",
+    "main.e0f4bc5b.js.map": "/mech-portfolio/static/js/main.e0f4bc5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.3cb6766e.css",
-    "static/js/main.beff7c41.js"
+    "static/css/main.871ef209.css",
+    "static/js/main.e0f4bc5b.js"
   ]
 }
