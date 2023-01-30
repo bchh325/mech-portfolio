@@ -9,11 +9,13 @@
 }
 
 .navcomp {
+    border-right: 1px solid white;
     pointer-events: auto;
     background-color: black;
     overflow: hidden;
     margin-left: -240px;
     transition: margin-left 0.3s cubic-bezier(0.5, 0.25, 0, 1);
+    box-shadow: rgba(0, 0, 0, 0.829) 0px 10px 10px 2px;
 }
 
 .navcomp:hover {
