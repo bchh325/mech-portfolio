@@ -1,28 +1,28 @@
-.resume {
+.contact {
+    padding: 5px;
     display: flex;
-    border: 2px solid var(--color-four);
     flex-direction: column;
-    align-items: center;
+    row-gap: 5px;
 }
 
-.resumeinfo {
-    height: 800px;
-    width: 100%;
+.contactlinks {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
 }
 
-.resumecol {
+.icons {
     border: 1px solid red;
 }
 
-.resumelink {
+.link {
     border: 1px solid red;
 }
 
 
 @media screen and (max-width: 760px) {
-    .resumeinfo {
+    .contactlinks {
         grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 150px);
     }
 }
