@@ -10,14 +10,14 @@ export default function Information() {
             </div>
             <div className={`${styles.infochild}`}>
                 <div className={styles.borderLeft}>
-                    <p className={`${styles.details} ${styles.slideText} ${styles.initialTransform} ${styles.delayTwo}`}>
+                    <p className={`${styles.details} ${styles.slideText} ${styles.initialTransform} ${styles.delayOne}`}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos, voluptatibus accusamus nemo impedit praesentium laudantium odio ipsa odit commodi officiis rem aut perferendis? Repellendus pariatur debitis sit hic quia!
                     </p>
                 </div>
             </div>
             <div className={`${styles.infochild}`}>
                 <div className={styles.borderRight}>
-                    <p className={`${styles.details} ${styles.slideTextAlt} ${styles.initialTransformAlt} ${styles.delayFour}`}>
+                    <p className={`${styles.details} ${styles.slideTextAlt} ${styles.initialTransformAlt} ${styles.delayThree}`}>
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente quos, voluptatibus accusamus nemo impedit praesentium laudantium odio ipsa odit commodi officiis rem aut perferendis? Repellendus pariatur debitis sit hic quia!
                     </p>
                 </div>
