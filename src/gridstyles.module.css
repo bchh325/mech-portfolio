@@ -1,11 +1,15 @@
 .gridcontainer {
     box-sizing: border-box;
-    padding-left: 55px;
+    padding-left: 34px;
     width: 100%;
     height: 100%;
     display: grid;
     grid-template-columns: min-content 3fr;
     row-gap: 20px;
+}
+
+.minibar {
+    background-color: red;
 }
 
 .gridchild {
@@ -92,6 +96,9 @@
     display: grid;
     grid-template-columns: repeat(2, minmax(min-content, 1fr));
     grid-auto-rows: calc(100vh / 6);
+    row-gap: 8px;
+    column-gap: 8px;
+    padding: 8px;
 }
 
 .gallerychild {
@@ -100,6 +107,28 @@
     width: 100%;
     border: 1px solid red;
     grid-column: span auto;
+}
+
+.resume {
+    display: flex;
+    border: 2px solid var(--color-four);
+    flex-direction: column;
+    align-items: center;
+}
+
+.resumeinfo {
+    height: 800px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.resumecol {
+    border: 1px solid red;
+}
+
+.resumelink {
+    border: 1px solid red;
 }
 
 @media screen and (max-width: 760px) {
@@ -112,4 +141,29 @@
     .gallery {
         grid-template-columns: 1fr;
     }
+
+    .gridcontainer {
+        padding-left: 12px;
+    }
+}
+
+.contact {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+.contactlinks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px;
+}
+
+.icons {
+    border: 1px solid red;
+}
+
+.link {
+    border: 1px solid red;
 }

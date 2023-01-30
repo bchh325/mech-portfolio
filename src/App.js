@@ -25,13 +25,13 @@ function App() {
               <span>Spans</span>
             </div>
             <div className={styles.navbtn}>
-              <AiOutlineMenu size={50}/>
+              <AiOutlineMenu size={30} />
             </div>
           </div>
         </div>
       </div>
       <div className={styles.gridcontainer}>
-        <div>curr</div>
+        <div className={styles.minibar}>curr</div>
         <div className={`${styles.gridchild} ${styles.childcontainer}`}>
           <div className={`${styles.content} ${styles.information}`}>
             <div className={styles.infochild}>grid child</div>
@@ -50,14 +50,22 @@ function App() {
             <div className={styles.gallerychild}>Gallery Child</div>
             <div className={styles.gallerychild}>Gallery Child</div>
           </div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
-          <div className={styles.content}>children</div>
+          <div className={styles.content}>resume</div>
+          <div className={styles.resume}>
+            <div className={styles.resumeinfo}>
+              <div className={styles.resumecol}>Info Column</div>
+              <div className={styles.resumecol}>Info Column</div>
+            </div>
+            <div className={styles.resumelink}>Link</div>
+          </div>
+          <div className={styles.content}>contact</div>
+          <div className={styles.contact}>
+            <div className={styles.icons}>Contant Icons</div>
+            <div className={styles.contactlinks}>
+              <div className={styles.link}>Link</div>
+              <div className={styles.link}>Link</div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

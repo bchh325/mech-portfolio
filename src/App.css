@@ -1,3 +1,10 @@
+:root {
+  --color-one: #00FFE8;
+  --color-two: #569D92;
+  --color-three: #E6FFFA;
+  --color-four: #545479;
+}
+
 .App {
   width: 100vw;
   height: 100vh;
