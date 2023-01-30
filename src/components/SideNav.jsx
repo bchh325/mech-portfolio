@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineMenu } from "react-icons/ai"
+import { AiOutlineRight } from "react-icons/ai"
 import styles from './SideNav.module.css'
 
 export default function SideNav() {
@@ -8,15 +8,13 @@ export default function SideNav() {
     <div className={styles.navcomp}>
       <div className={styles.flexcontainer}>
         <div className={styles.innerflex}>
-          <span>Spans</span>
-          <span>Spans</span>
-          <span>Spans</span>
-          <span>Spans</span>
-          <span>Spans</span>
-          <span>Spans</span>
+          <span className={styles.navlink}>About Me</span>
+          <span className={styles.navlink}>Resume</span>
+          <span className={styles.navlink}>Projects</span>
+          <span className={styles.navlink}>Contact</span>
         </div>
         <div className={styles.navbtn}>
-          <AiOutlineMenu size={30} />
+          <AiOutlineRight color="white" size={30} />
         </div>
       </div>
     </div>

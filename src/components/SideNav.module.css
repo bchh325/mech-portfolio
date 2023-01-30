@@ -6,15 +6,15 @@
     position: fixed;
     grid-template-columns: min-content min-content;
     justify-items: start;
-    box-shadow: rgba(0, 0, 0, 0.829) 0px 22px 30px 2px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 10px 30px 10px;
 }
 
 .navcomp {
     pointer-events: auto;
-    background-color: #dfe6e9;
+    background-color: black;
     overflow: hidden;
-    margin-left: -220px;
-    transition: margin-left 0.25s cubic-bezier(0.5, 0.25, 0, 1);
+    margin-left: -240px;
+    transition: margin-left 0.3s cubic-bezier(0.5, 0.25, 0, 1);
 }
 
 .navcomp:hover {
@@ -25,11 +25,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 10px;
 }
 
 .flexcontainer {
     font-size: 1.5rem;
-    row-gap: 20px;
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -37,20 +37,38 @@
 }
 
 .innerflex {
+    row-gap: 40px;
     display: flex;
     height: 100%;
     flex-direction: column;
     justify-content: center;
 }
 
-.flexcontainer span {
-    background-color: green;
-    padding: 0px 80px;
+.navlink {
+    width: 150px;
+    text-align: start;
+    box-sizing: border-box;
+    color: white;
+    margin: 0px 50px;
+    font-weight: bold;
+    cursor: pointer;
+    -webkit-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -moz-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -o-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+}
+
+.navlink:hover {
+    border-right: 4px solid white;
+    transform: translateX(10px);
+}
+
+.linkcontainer {
+    margin: 0px 40px;
 }
 
 @media screen and (max-width: 760px) {
     .nav {
         box-shadow: rgba(0, 0, 0, 0.829) 0px 5px 10px 1px;
-
     }
 }

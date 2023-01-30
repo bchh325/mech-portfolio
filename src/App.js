@@ -21,11 +21,17 @@ function App() {
         <div className={styles.minibar} />
         <div className={`${styles.gridchild} ${styles.childcontainer}`}>
           <Information />
-          <div className={styles.content}>resume</div>
+          <div className="section-title">
+            <span>Resume</span>
+          </div>
           <Resume />
-          <div className={styles.content}>project gallery</div>
+          <div className="section-title">
+            <span>Projects</span>
+          </div>
           <ProjContainer />
-          <div className={styles.content}>contact</div>
+          <div className="section-title">
+            <span>Contact</span>
+          </div>
           <Contact />
         </div>
       </div>
