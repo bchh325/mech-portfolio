@@ -25,10 +25,9 @@
     justify-content: center;
     align-items: center;
     margin-right: 10px;
-    animation: nudge ease-in-out 0.65s;
-    animation-iteration-count: 1;
-    animation-fill-mode: forwards;
+    animation: nudge ease-in-out 0.7s;
     animation-iteration-count: 10;
+    animation-fill-mode: forwards;
 }
 
 .flexcontainer {
@@ -55,6 +54,10 @@
     margin: 0px 50px;
     font-weight: bold;
     cursor: pointer;
+    -webkit-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -moz-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -o-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
 }
 
 .navlink:hover {
@@ -81,7 +84,7 @@
         transform: translateX(5px);
     }
 
-    0% {
+    100% {
         transform: translateX(0px);
     }
 }
