@@ -34,12 +34,16 @@
 }
 
 .infochild {
+    opacity: 0;
     display: flex;
     height: 100%;
     width: 100%;
     grid-column: span auto;
     align-items: center;
     justify-content: center;
+    animation: fadeInAnimation ease-in-out 0.75s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .highlight {
@@ -61,6 +65,27 @@
 .details::first-letter {
     font-weight: bold;
 }
+
+.delayOne {
+    -webkit-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+
+.delayTwo {
+    -webkit-animation-delay: 450ms;
+    animation-delay: 450ms;
+}
+
+.delayThree {
+    -webkit-animation-delay: 700ms;
+    animation-delay: 700ms;
+}
+
+.delayFour {
+    -webkit-animation-delay: 950ms;
+    animation-delay: 950ms;
+}
+
 
 @media screen and (max-width: 1300px) {
     .details {
@@ -95,4 +120,13 @@
     .details {
         font-size: 0.9rem;
     }
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+     }
 }
