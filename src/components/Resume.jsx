@@ -25,6 +25,7 @@ export default function Resume() {
 
     return (
         <div className={styles.resume}>
+            <div className={styles.resumeBg}/>
             <div className={styles.resumegrid}>
                 <div className={styles.resumecol}>
                     <div className={styles.infocontainer}>
