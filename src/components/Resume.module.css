@@ -58,16 +58,54 @@
     padding: 0;
 }
 
+.edu {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.edu span:nth-child(1) {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.edu span:nth-child(2) {
+    font-size: 1.1rem;
+}
+
+.edu span:nth-child(3) {
+    font-size: 1.1rem;
+}
+
+.edu span:nth-child(4) {
+    font-style: italic;
+}
+
+.title span {
+    padding: 0px 10px;
+}
+
+.title span:nth-child(1) {
+    padding-top: 10px;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.title span:nth-child(2) {
+    font-size: 1.1rem;
+}
+
+.title span:nth-child(3) {
+    font-style: italic;
+}
+
+
+
 @media screen and (max-width: 760px) {
     .resumegrid {
         grid-template-columns: 1fr;
-    }
-    .resumeDetail span:first-of-type {
-        display: none;
-    }
-    .resumeDetail span:nth-child(2)::first-letter {
-        font-weight: bolder;
-        font-size: 1.1rem;
     }
     .resumeDetail span {
         width: auto;

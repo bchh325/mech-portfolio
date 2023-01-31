@@ -16,7 +16,11 @@ export default function Resume() {
     ])
 
     const [skills, setSkills] = useState([
-        
+        "Solidworks Modeling",
+        "Solidworks FEA",
+        "3D Printing",
+        "MATLAB",
+        "Fusion 360"
     ])
 
     return (
@@ -25,21 +29,26 @@ export default function Resume() {
                 <div className={styles.resumecol}>
                     <div className={styles.infocontainer}>
                         <div className={styles.title}>
-                            <span>Title</span>
+                            <span>Skills</span>
                         </div>
                         <div>
-                            <span>Skill 1</span>
-                            <span>Skill 1</span>
-                            <span>Skill 1</span>
+                            {skills.map((item, index) => {
+                                return (
+                                    <div key={index} className={styles.resumeDetail}>
+                                        <span><RxDotFilled size={20} /></span>
+                                        <span>{item}</span>
+                                    </div>
+                                )
+                            })}
                         </div>
                     </div>
                 </div>
                 <div className={styles.resumecol}>
                     <div className={styles.infocontainer}>
                         <div className={styles.title}>
-                            <span>Title</span>
-                            <span>Title</span>
-                            <span>Title</span>
+                            <span>Aerostructures Designer and Researcher</span>
+                            <span>Beach Launch Team</span>
+                            <span>July 2022 – Present</span>
                         </div>
                         <div>
                             {info.map((item, index) => {
@@ -51,6 +60,15 @@ export default function Resume() {
                                 )
                             })}
                         </div>
+                    </div>
+                </div>
+                <div className={styles.resumecol}>
+                    <div className={`${styles.edu}`}>
+                        <span>Bachelors of Aerospace Engineering (Emphasis: Astronautics)
+                        </span>
+                        <span>California State University Long Beach (GPA: 3.43)</span>
+                        <span>President’s Honors List (2 semesters)</span>
+                        <span>August 2020 - May 2024</span>
                     </div>
                 </div>
             </div>

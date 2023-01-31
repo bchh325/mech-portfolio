@@ -96,11 +96,11 @@
 }
 
 .initialTransform {
-    transform: translateX(1000px);
+    transform: translateX(100vw);
 }
 
 .initialTransformAlt {
-    transform: translateX(-1000px);
+    transform: translateX(-100vw);
 }
 
 .delayOne {
@@ -165,7 +165,7 @@
 
 @keyframes slideTextLeft {
     from {
-        transform: translateX(1000px);
+        transform: translateX(50vw);
     }
 
     to {
@@ -175,7 +175,7 @@
 
 @keyframes slideTextRight {
     from {
-        transform: translateX(-1000px);
+        transform: translateX(-50vw);
     }
 
     to {
