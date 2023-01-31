@@ -79,6 +79,7 @@
 .borderLeft {
     overflow: hidden;
     border-left: 4px solid white;
+    transform: translateX(-4px);
 }
 
 .slideText {

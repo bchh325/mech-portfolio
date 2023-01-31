@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiOutlineRight } from "react-icons/ai"
+import { AiOutlineBars } from "react-icons/ai"
 import styles from './SideNav.module.css'
 
 export default function SideNav() {
@@ -14,7 +14,7 @@ export default function SideNav() {
           <span className={styles.navlink}>Contact</span>
         </div>
         <div className={styles.navbtn}>
-          <AiOutlineRight color="white" size={30} />
+          <AiOutlineBars color="white" size={30} />
         </div>
       </div>
     </div>

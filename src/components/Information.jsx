@@ -22,7 +22,7 @@ export default function Information() {
                     </p>
                 </div>
             </div>
-            <div className={`${styles.infochild}  ${styles.hide} ${styles.fadeIn} ${styles.delayThree}`}>
+            <div className={`${styles.infochild} ${styles.hide} ${styles.fadeIn} ${styles.delayThree}`}>
                 <span className={styles.default}>Aerospace <span className={styles.highlight}>Engineering</span></span>
             </div>
         </div>
