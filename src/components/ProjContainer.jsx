@@ -8,10 +8,6 @@ export default function ProjContainer() {
             <div className={styles.gallerychild}>Gallery Child</div>
             <div className={styles.gallerychild}>Gallery Child</div>
             <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
         </div>
     )
 }
