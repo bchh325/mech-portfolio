@@ -19,7 +19,7 @@ function App() {
       <SideNav />
       <div className={styles.gridcontainer}>
         <div className={styles.minibar} />
-        <div className={`${styles.gridchild} ${styles.childcontainer}`}>
+        <div className={`${styles.childcontainer}`}>
           <Information />
           <div className="section-title">
             <span>Resume</span>

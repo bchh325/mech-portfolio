@@ -4,7 +4,8 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    z-index: -1;
+    z-index: 0;
+    width: fit-content;
 }
 
 .resumeBg {
@@ -25,8 +26,12 @@
 
 .resumecol {
     height: max-content;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
+    border: 1px solid black;
+}
+
+.buttonTest {
+    pointer-events: auto;
+    position: relative;
 }
 
 .resumecol span {
@@ -34,8 +39,20 @@
     padding: 10px 2vw;
 }
 
+.linkcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+}
 .resumelink {
-    border: 1px solid red;
+    padding: 10px 40px;
+    background-color: green;
+    border-radius: 5px;
+}
+
+.resumelink:hover {
+    border: 1px solid green;
 }
 
 .infocontainer {

@@ -23,6 +23,10 @@ export default function Resume() {
         "Fusion 360"
     ])
 
+    const clickHandler = () => {
+        console.log("test click")
+    }
+
     return (
         <div className={styles.resume}>
             <div className={styles.resumeBg}/>
@@ -73,7 +77,9 @@ export default function Resume() {
                     </div>
                 </div>
             </div>
-            <div className={styles.resumelink}>Link</div>
+            <div className={styles.linkcontainer}>
+                <span className={styles.resumelink}>Resume</span>
+            </div>
         </div>
     )
 }
