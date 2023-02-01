@@ -3,13 +3,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #050C11;
+    width: 100%;
     z-index: 0;
-    width: fit-content;
+    overflow: hidden;
 }
 
 .resumeBg {
-    background-color: rgb(235, 235, 235);
+    background-color: whitesmoke;
     position: absolute;
     width: 50%;
     height: 100%;
@@ -45,14 +46,23 @@
     justify-content: center;
     padding: 10px 20px;
 }
+
 .resumelink {
+    color: white;
     padding: 10px 40px;
-    background-color: green;
+    background-color: #050C11;
+    border: 2px solid #050C11;
     border-radius: 5px;
+    animation-name: color-change-default;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
 }
 
 .resumelink:hover {
-    border: 1px solid green;
+    cursor: pointer;
+    animation-name: color-change;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
 }
 
 .infocontainer {
@@ -130,10 +140,35 @@
     font-style: italic;
 }
 
+@keyframes color-change {
+    from {
+        border-color: #050C11;
+        color: white;
+    }
+
+    to {
+        border-color: #CA8000;
+        color: #CA8000;
+    }
+}
+
+@keyframes color-change-default {
+    from {
+        border-color: #CA8000;
+        color: #CA8000;
+    }
+
+    to {
+        border-color: #050C11;
+        color: white;
+    }
+}
+
 @media screen and (max-width: 1300px) {
     .resumegrid {
         width: 70%;
     }
+
     .resumeBg {
         width: 70%;
     }
@@ -145,9 +180,11 @@
         grid-template-columns: 1fr;
         width: 100%;
     }
+
     .resumeBg {
         width: 100%;
     }
+
     .resumeDetail span {
         width: auto;
         padding: 0;
@@ -157,4 +194,3 @@
         grid-template-columns: 1fr;
     }
 }
-

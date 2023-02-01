@@ -1,25 +1,21 @@
-:root {
-  --color-one: #00FFE8;
-  --color-two: #569D92;
-  --color-three: #E6FFFA;
-  --color-four: #545479;
-}
-
 .App {
   width: 100vw;
   height: max-content;
 }
 
 .section-title {
+
   display: flex;
   justify-content: center;
-  background-color: white;
+  background-color: #050C11;
 }
 
 .section-title span {
-  color: black;
+  color: rgb(189, 189, 189);
   letter-spacing: 1px;
-  padding: 20px 0px;
+  padding-top: 20px;
+  margin-bottom: 20px;
   font-size: 2.5em;
   font-weight: bolder;
+  border-bottom: 3px solid #CA8000;
 }

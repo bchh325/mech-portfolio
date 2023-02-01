@@ -21,7 +21,7 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.25;
+    opacity: 0.15;
     z-index: -1;
 }
 
@@ -50,15 +50,18 @@
 
 .highlight {
     font-weight: normal;
+    color: white;
 }
 
 .default {
     font-weight: bold;
     font-size: 4rem;
     width: min-content;
+    color: #CA8000;
 }
 
 .details {
+    color: rgb(189, 189, 189);
     font-size: 2rem;
     padding: 0px 15px;
 }
@@ -73,12 +76,12 @@
 
 .borderRight {
     overflow: hidden;
-    border-right: 4px solid white;
+    border-right: 4px solid #CA8000;
 }
 
 .borderLeft {
     overflow: hidden;
-    border-left: 4px solid white;
+    border-left: 4px solid #CA8000;
     transform: translateX(-4px);
 }
 

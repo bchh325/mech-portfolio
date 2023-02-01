@@ -23,9 +23,21 @@ export default function Resume() {
         "Fusion 360"
     ])
 
+    const [resume, setResume] = useState("https://docs.google.com/document/d/1AiBqoQfcB8W8wMLAfTVGSDHAjhJYq4G7kDbGbJPeRZA/edit")
+
     const clickHandler = () => {
         console.log("test click")
     }
+
+    const openInNewTab = (url) => {
+        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
+        if (newWindow) newWindow.opener = null
+      }
+    
+      const onClickUrl = (url) => {
+        console.log("url('" + info.img + "')")
+        return () => openInNewTab(url)
+      }
 
     return (
         <div className={styles.resume}>
@@ -78,7 +90,7 @@ export default function Resume() {
                 </div>
             </div>
             <div className={styles.linkcontainer}>
-                <span className={styles.resumelink}>Resume</span>
+                <span onClick={onClickUrl(resume)}className={styles.resumelink}>Resume</span>
             </div>
         </div>
     )
