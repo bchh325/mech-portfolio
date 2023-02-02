@@ -22,15 +22,15 @@ function App() {
         <div className={`${styles.childcontainer}`}>
           <Information />
           <div className="section-title">
-            <span>Resume</span>
+            <span id="resume">Resume</span>
           </div>
           <Resume />
           <div className="section-title">
-            <span>Projects</span>
+            <span id="projects">Projects</span>
           </div>
           <ProjContainer />
           <div className="section-title">
-            <span>Contact</span>
+            <span id="contact">Contact</span>
           </div>
           <Contact />
         </div>

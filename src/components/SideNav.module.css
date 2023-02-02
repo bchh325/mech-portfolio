@@ -62,7 +62,7 @@
 }
 
 .navlink:hover {
-    border-right: 4px solid white;
+    border-right: 4px solid #CA8000;
     transform: translateX(10px);
 }
 

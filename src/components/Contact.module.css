@@ -1,4 +1,5 @@
 .contact {
+    background-color: #050C11;
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -12,13 +13,57 @@
 }
 
 .icons {
-    border: 1px solid red;
+    display: flex;
+    padding: 20px 0px;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons span {
+    border: 2px dashed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: color-change-default;
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
+    -webkit-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -moz-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    -o-transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+    transition: transform 0.35s cubic-bezier(0.5, 0.25, 0, 1);
+}
+
+.icons span:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    animation-name: color-change;
+    animation-duration: 0.15s;
+    animation-fill-mode: forwards;
 }
 
 .link {
     border: 1px solid red;
 }
 
+@keyframes color-change {
+    from {
+        border-color: #050C11;
+    }
+
+    to {
+        border-color: white;
+    }
+}
+
+@keyframes color-change-default {
+    from {
+        border-color: white;
+    }
+
+    to {
+        border-color: #050C11;
+    }
+}
 
 @media screen and (max-width: 760px) {
     .contactlinks {

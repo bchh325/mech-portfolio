@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from './Resume.module.css'
 import { RxDotFilled } from 'react-icons/rx'
+import useOpenLink from './hooks/useOpenLink'
 
 export default function Resume() {
     const [info, setInfo] = useState([
@@ -25,23 +26,9 @@ export default function Resume() {
 
     const [resume, setResume] = useState("https://docs.google.com/document/d/1AiBqoQfcB8W8wMLAfTVGSDHAjhJYq4G7kDbGbJPeRZA/edit")
 
-    const clickHandler = () => {
-        console.log("test click")
-    }
-
-    const openInNewTab = (url) => {
-        const newWindow = window.open(url, '_blank', 'noopener,noreferrer')
-        if (newWindow) newWindow.opener = null
-      }
-    
-      const onClickUrl = (url) => {
-        console.log("url('" + info.img + "')")
-        return () => openInNewTab(url)
-      }
-
     return (
         <div className={styles.resume}>
-            <div className={styles.resumeBg}/>
+            <div className={styles.resumeBg} />
             <div className={styles.resumegrid}>
                 <div className={styles.resumecol}>
                     <div className={styles.infocontainer}>
@@ -90,7 +77,7 @@ export default function Resume() {
                 </div>
             </div>
             <div className={styles.linkcontainer}>
-                <span onClick={onClickUrl(resume)}className={styles.resumelink}>Resume</span>
+                <span onClick={useOpenLink(resume)} className={styles.resumelink}>Resume</span>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import styles from './Information.module.css'
 
 export default function Information() {
     return (
-        <div className={styles.information}>
+        <div id="about-me" className={styles.information}>
             <div className={styles.background} />
             <div className={`${styles.infochild} ${styles.hide} ${styles.fadeIn} ${styles.delayOne}`}>
                 <span className={styles.default}>John <span className={styles.highlight}>Doe</span></span>
