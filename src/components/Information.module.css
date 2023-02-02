@@ -1,5 +1,3 @@
-
-
 .information {
     color: white;
     display: grid;
@@ -155,15 +153,20 @@
     .details {
         font-size: 0.9rem;
     }
+
+    .information {
+        row-gap: 20px;
+    }
 }
 
 @keyframes fadeInAnimation {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
-     }
+    }
 }
 
 @keyframes slideTextLeft {
