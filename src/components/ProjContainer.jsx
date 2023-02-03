@@ -1,13 +1,14 @@
 import React from 'react'
 import styles from './ProjContainer.module.css'
+import Project from './Project'
 
 export default function ProjContainer() {
     return (
         <div className={styles.gallery}>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
-            <div className={styles.gallerychild}>Gallery Child</div>
+            <Project />
+            <Project />
+            <Project />
+            <Project />
         </div>
     )
 }
